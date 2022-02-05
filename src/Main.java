@@ -5,10 +5,10 @@ public class Main {
         Scanner input = new Scanner (System.in);
         System.out.println(" Please enter mounth and day you were born: ");
         System.out.println(" Month.Day Example:11.01 or 01.01 or 12.06");
-
+        //input.skip("a");
         double n1 = input.nextDouble();
         System.out.print("Your zodiac sign is: ");
-        if (n1>= 12.22 && n1<=01.21) {System.out.println("Capricorn");}
+        if (n1>= 12.22 || n1<=01.21) {System.out.println("Capricorn");}
         else if (n1>= 01.22 && n1<=02.19) {System.out.println("Aquarius ");}
         else if (n1 >= 02.20 && n1<=03.20) {System.out.println("Pisces");}
         else if (n1 >= 03.21 && n1<=04.20) {System.out.println("Aries");}
